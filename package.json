@@ -1,4 +1,19 @@
 {
   "name": "zod",
-  "packageManager": "yarn@4.12.0"
+  "type": "module",
+  "main": "./dist/main.js",
+  "scripts": {
+    "build:ts": "tsc --project tsconfig.json",
+    "test": "run build:ts && node ./dist/main.js"
+  },
+  "packageManager": "yarn@4.12.0",
+  "dependencies": {
+    "@trpc/client": "^11.17.0",
+    "@trpc/server": "^11.17.0",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.7.0",
+    "typescript": "^6.0.3"
+  }
 }

@@ -1,0 +1,18 @@
+{
+	"exclude": ["node_modules/**"],
+	"include": ["main.ts"],
+	"compilerOptions": {
+		"paths": {
+			"*": ["./node_modules/*"]
+		},
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+    "target": "es2024",
+		"types": ["node"],
+    "lib": ["ES2024"],
+		"skipLibCheck": true,
+		"strict": true,
+
+    "outDir": "./dist",
+	},
+}
